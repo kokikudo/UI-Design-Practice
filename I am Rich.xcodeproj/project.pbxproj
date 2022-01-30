@@ -14,6 +14,9 @@
 		FD43CE0127A629F10070F0DE /* I_am_RichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43CE0027A629F10070F0DE /* I_am_RichTests.swift */; };
 		FD43CE0B27A629F10070F0DE /* I_am_RichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43CE0A27A629F10070F0DE /* I_am_RichUITests.swift */; };
 		FD43CE0D27A629F10070F0DE /* I_am_RichUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43CE0C27A629F10070F0DE /* I_am_RichUITestsLaunchTests.swift */; };
+		FD55C0B327A63DDC004537AA /* Neonderthaw-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD55C0B227A63DDC004537AA /* Neonderthaw-Regular.ttf */; };
+		FD55C0B627A654C2004537AA /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD55C0B527A654C1004537AA /* Pacifico-Regular.ttf */; };
+		FD55C0B827A65772004537AA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55C0B727A65772004537AA /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		FD43CE0627A629F10070F0DE /* I am RichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I am RichUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD43CE0A27A629F10070F0DE /* I_am_RichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_am_RichUITests.swift; sourceTree = "<group>"; };
 		FD43CE0C27A629F10070F0DE /* I_am_RichUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_am_RichUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD55C0B227A63DDC004537AA /* Neonderthaw-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neonderthaw-Regular.ttf"; sourceTree = "<group>"; };
+		FD55C0B427A63F85004537AA /* I-am-Rich-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "I-am-Rich-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FD55C0B527A654C1004537AA /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		FD55C0B727A65772004537AA /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,13 @@
 		FD43CDEE27A629EE0070F0DE /* I am Rich */ = {
 			isa = PBXGroup;
 			children = (
+				FD55C0B427A63F85004537AA /* I-am-Rich-Info.plist */,
+				FD55C0B127A63DCA004537AA /* Fonts */,
 				FD43CDEF27A629EE0070F0DE /* I_am_RichApp.swift */,
 				FD43CDF127A629EE0070F0DE /* ContentView.swift */,
 				FD43CDF327A629F10070F0DE /* Assets.xcassets */,
 				FD43CDF527A629F10070F0DE /* Preview Content */,
+				FD55C0B727A65772004537AA /* InfoView.swift */,
 			);
 			path = "I am Rich";
 			sourceTree = "<group>";
@@ -125,6 +135,15 @@
 				FD43CE0C27A629F10070F0DE /* I_am_RichUITestsLaunchTests.swift */,
 			);
 			path = "I am RichUITests";
+			sourceTree = "<group>";
+		};
+		FD55C0B127A63DCA004537AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD55C0B527A654C1004537AA /* Pacifico-Regular.ttf */,
+				FD55C0B227A63DDC004537AA /* Neonderthaw-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD43CDF727A629F10070F0DE /* Preview Assets.xcassets in Resources */,
+				FD55C0B627A654C2004537AA /* Pacifico-Regular.ttf in Resources */,
 				FD43CDF427A629F10070F0DE /* Assets.xcassets in Resources */,
+				FD55C0B327A63DDC004537AA /* Neonderthaw-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD43CDF227A629EE0070F0DE /* ContentView.swift in Sources */,
+				FD55C0B827A65772004537AA /* InfoView.swift in Sources */,
 				FD43CDF027A629EE0070F0DE /* I_am_RichApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +444,7 @@
 				DEVELOPMENT_TEAM = S3ZNGP43TF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "I-am-Rich-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +474,7 @@
 				DEVELOPMENT_TEAM = S3ZNGP43TF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "I-am-Rich-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
